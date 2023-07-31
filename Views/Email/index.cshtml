@@ -1,4 +1,4 @@
-﻿@model FIT5032A2FXY.Models.Appointment
+@model FIT5032A2FXY.Models.Appointment
 
 @{
     ViewBag.Title = "index";
@@ -49,7 +49,7 @@
 
                 // Make a POST request to the controller action with the data
                 $.ajax({
-                    url: "/Appointments/CreateAppointment",
+                    url: "/Email/Send",
                     type: "POST",
                     data: SentData,
                     processData: false,
